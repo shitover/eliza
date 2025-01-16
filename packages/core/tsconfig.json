@@ -1,27 +1,16 @@
 {
     "compilerOptions": {
-        "target": "ESNext",
-        "module": "ESNext",
-        "lib": ["ESNext", "dom"],
-        "moduleResolution": "Bundler",
+        "composite": true,
         "outDir": "./dist",
         "rootDir": "./src",
-        "strict": false,
+        "moduleResolution": "node16",
+        "module": "node16",
+        "target": "es2020",
         "esModuleInterop": true,
         "skipLibCheck": true,
-        "forceConsistentCasingInFileNames": false,
-        "allowImportingTsExtensions": true,
-        "declaration": true,
-        "emitDeclarationOnly": true,
-        "resolveJsonModule": true,
-        "noImplicitAny": false,
-        "allowJs": true,
-        "checkJs": false,
-        "noEmitOnError": false,
-        "moduleDetection": "force",
-        "allowArbitraryExtensions": true,
-        "customConditions": ["@elizaos/source"]
+        "strict": true
     },
-    "include": ["src/**/*"],
-    "exclude": ["node_modules", "dist", "src/**/*.d.ts", "types/**/*.test.ts"]
+    "include": [
+        "src/**/*"
+    ]
 }
