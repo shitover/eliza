@@ -1,0 +1,29 @@
+{
+    "extends": "../../tsconfig.json",
+    "compilerOptions": {
+        "outDir": "./dist",
+        "rootDir": "./src",
+        "moduleResolution": "node16",
+        "module": "node16",
+        "target": "es2020",
+        "lib": [
+            "es2020",
+            "dom"
+        ],
+        "esModuleInterop": true,
+        "skipLibCheck": true,
+        "strict": true,
+        "types": [
+            "vitest/globals"
+        ]
+    },
+    "include": [
+        "src/**/*",
+        "tests/**/*"
+    ],
+    "references": [
+        {
+            "path": "../core"
+        }
+    ]
+}
